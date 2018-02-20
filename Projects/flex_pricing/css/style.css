@@ -1,0 +1,370 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: "Maven Pro", sans-serif;
+}
+html {
+	font-size: 10px;
+}
+
+.main {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	min-height: 600px;
+   background: url(../img/header.jpg) no-repeat center;
+   background-size: cover; 
+   position: relative;
+}
+.main-overlay, .call-to-action-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	z-index: 0;
+	background-image: -moz-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+   background-image: -webkit-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+   background-image: -ms-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%); 
+}
+
+.header {
+	display: flex;
+	height: 10vh;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	position: relative;
+	z-index: 2;
+}
+.menu {
+	width: 70%;
+}
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	font-size: 1.5rem;
+}
+
+.menu-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.get-started-btn {
+	margin-left: 60px;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	border-radius: 100px;
+	text-transform: uppercase;
+}
+
+.main-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+
+.main-text span {
+	display: inline-block;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.main-text p {
+	font-size: 1.3rem;
+}
+.main-text h1 {
+	margin: 0.5rem;
+	font-size: 80px; 
+}
+.main-text span::after {
+	content:"";
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.main-text span::before {
+	content:"";
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.main-arrow {
+	height: 15vh;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center; }
+
+.arrom-down {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: #fff; 
+	border-radius: 50%;
+	box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+}
+
+.table {
+	background-color: #f9fafc;
+	padding: 10rem;
+}
+.table-header {
+	text-align: center;
+	margin-bottom: 5rem;
+}
+.table-header span {
+	text-transform: uppercase;
+	color: #b6bac2;
+	font-size: 1.4rem; 
+}
+.table-header span::after {
+	content:"";
+	width: 40px;
+	height: 1px;
+	background-color: #6e45e2;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.table-header span::before {
+	content:"";
+	width: 40px;
+	height: 1px;
+	background-color: #6e45e2;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.table-header p {
+	font-size: 1.6rem;
+	display: inline-block;
+	width: 40rem;
+	color: #b6bac2;
+}
+.table-header h2 {
+	color: #4f4f6f;
+	font-size: 6rem;
+	margin: 0;
+}
+.price-tags {
+	display: flex;
+	justify-content: space-around;
+}
+.price-tag {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+	width: 350px;
+	height: 450px;
+	padding: 2rem;
+	background-color: #ffffff;
+	border-radius: 3rem;
+}
+
+.price-tag:hover {
+	cursor: pointer;
+	transition: 0.4s;
+	box-shadow: 0px 0px 81.88px 10.12px rgba(204, 204, 223, 0.71);
+}
+.price-tag span {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	color: #9fa4af;
+	margin: 3rem auto 1rem;
+}
+
+.price-tag h3 {
+	font-weight: 500;
+	font-size: 3.5rem;
+	color: #4f4f6f;
+	margin: 0;
+}
+.price-tag h3 sub {
+	font-size: 1.6rem;
+}
+.price-tag h3 sup {
+	font-size: 1.4rem;
+	vertical-align: super;
+	margin-right: 0.5rem;
+}
+.price-tag p {
+	color: #b7bbc3;
+	font-size: 16px;
+	line-height: 28px;
+}
+.price-btn {
+	background-color: #fff;
+	color: #d7dbe8;
+	border: solid 1px #d7dbe8;
+	text-transform: uppercase;
+	border-radius: 10rem; 
+	font-size: 1rem;
+	font-weight: 300;
+	padding: 1rem 4rem;
+	display: flex;
+	align-content: 
+}
+.price-btn:hover {
+	background-color: #6e45e2;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+.call-to-action {
+	text-align: center;
+	position: relative;
+	padding: 20rem;
+	color: #fff;
+}
+.call-to-action span {
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.call-to-action h3 {
+	font-weight: 500;
+	font-size: 4.5rem;
+	margin: 1rem auto 3rem;
+}
+.cta-btn {
+	display: inline-block;
+	border: none;
+	background-color: #fff;
+	color: #c2c9db;
+	width: 20rem;
+	height: 5rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 10rem;
+	margin: 1rem;
+	transition: 0.5s;
+}
+.cta-btn:hover {
+	background-color: #6e45e2;
+	cursor: pointer;
+}
+.wrap {
+	z-index: 2;
+	position: relative;
+}
+.footer-wrap {
+	display: flex;
+	justify-content: center;
+}
+.footer {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+	align-items: center;
+	background-color: #f44ff;
+}
+.footer-menu {
+	width: 50%;
+}
+.footer-menu ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none; 
+}
+.footer-menu-link {
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: #6a6a77;
+	font-weight: 500;
+}
+.footer-get-started {
+	margin-left: 60px;
+	border: 1px solid #fff;
+	background-color: #6e45e2;
+	padding: 10px 20px;
+	border-radius: 100px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.legal {
+	padding-left: 5%;
+	padding-right: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copy {
+	font-size: 1.4rem;
+	color: #6a6a77;
+}
+
+.social-links a {
+	color: #6a6a77;
+	font-size: 1.4rem;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.m-menu-link {
+	display: none; 
+	color: #fff;
+	font-size: 3rem;
+}
+
+.m-menu {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	list-style: none;
+	font-size: 3rem;
+	line-height: 9rem;
+	z-index: 9999;
+	background-color: #6e45e2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateX(100%);
+	transition: 0.2s; 
+}
+
+.m-menu__active {
+	transform: translateX(0%);
+}
+
+.close-menu {
+	position: fixed;
+	right: 5rem;
+	top: 0;
+	font-size: 5rem;
+	font-weight: 900;
+	color: #fff;
+}
+.close-menu:hover {
+	cursor: pointer;
+}
