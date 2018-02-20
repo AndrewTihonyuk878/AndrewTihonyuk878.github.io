@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico/Pacifico.ttf); }
+@font-face {
+  font-family: "HelveticaNeue-Medium";
+  src: url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf);
+  src: url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot);
+  src: url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.woff);
+  src: url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.svg); }
+@font-face {
+  font-family: "HelveticaNeueCyr-BoldItalic";
+  src: url(../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-BoldItalic.otf); }
+@font-face {
+  font-family: "HelveticaNeueCyr-Italic";
+  src: url(../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-Italic.otf); }
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/Helvetica-Neue-Cyr/HelveticaNeue.ttf); }
+@font-face {
+  font-family: "RalewaySemiBold";
+  src: url(../fonts/RalewaySemiBold/RalewaySemiBold.eot);
+  src: url(../fonts/RalewaySemiBold/RalewaySemiBold.ttf);
+  src: url(../fonts/RalewaySemiBold/RalewaySemiBold.woff); }
+@font-face {
+  font-family: "RalewayBold";
+  src: url(../fonts/RalewayBold/RalewayBold.eot);
+  src: url(../fonts/RalewayBold/RalewayBold.ttf);
+  src: url(../fonts/RalewayBold/RalewayBold.woff); }
