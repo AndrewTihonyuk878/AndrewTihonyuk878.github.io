@@ -1,0 +1,274 @@
+@import "settings";
+
+section.top {
+	background: url("../img/background.jpg") no-repeat center 0;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	background-attachment: fixed;
+
+	&>.wr{
+		@extend %flex; 
+		height: 100%;
+		header {
+			@extend %flex;
+			flex-basis: 100%;
+			justify-content: space-between;
+			align-self: flex-start;
+
+			.logo {
+				@extend %flex;
+				width: 140px;
+				height: 74px;
+				display: block;
+				background-color: $fairRead;
+				color: #fff;
+				border-radius: 0 0 10px 10px;
+				text-align: center;
+				h3 {
+					font-size: 20px;
+					margin-top: 40px;
+					span {
+						margin-left: 5px;
+						color: black;
+					}
+				}
+			}
+			nav {
+				ul {
+					@extend %ul, %flex;
+					margin-top: 25px;
+					li {
+						margin-left: 30px; 
+
+						a{
+							color: $darkGray;
+							font-family: $Montserrat;
+							font-size: 14px;
+							text-transform: uppercase;
+							text-decoration: none;
+							transition: all 0.3s ease;
+							&:hover {
+								color: $fairRead;
+							}
+						}
+						&.social {
+							a {
+								width: 25px;
+								height: 25px;
+								display: inline-block;
+								font-size: 18px;
+								color: $fairRead;
+								margin-left: 10px;
+								@include addPrefix(filter, grayscale(100%));
+								transition: all 0.3s ease;
+
+								&:hover {
+									@include addPrefix(filter, grayscale(0));
+								}
+								
+							}
+						}
+					}
+				}
+			}
+		}
+		.sloganCont {
+			max-width: 58%;
+
+			h1{
+				font-family: $Montserrat;
+				font-size: 48px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin: 0;
+				color: $gray; 
+			}
+			h4 {
+				font-family: $OpenSans;
+				font-size: 20px;
+				color: $gray; 
+				font-weight: 400;
+				margin: 20px 0 35px 0;
+			}
+			.btn {
+				display: inline-block;
+				text-decoration: none;
+				margin-top: 45px;
+				span {
+					color: #fff;
+					font-family: $OpenSans;
+					font-size: 15px;
+					font-weight: 700;
+					padding: 25px 35px;
+					background-color: $fairRead;
+					border-radius: 10px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+section.snippets {
+	position: relative;
+
+	&>.wr {
+
+		&>ul {
+			@extend %ul, %flex;
+			margin: 80px 0;
+
+			li {
+				width: (100% / 3);
+				box-sizing: border-box;
+				padding-right: 55px;  
+				h3 {
+					font-family: $Montserrat;
+					font-size: 26px;
+					font-weight: 600;
+					color: $graylight;
+					text-transform: uppercase;
+				}
+				.descr {
+					font-family: $OpenSans;
+					font-size: 15px;	
+					color: $graylightnew;
+				}
+				.more i {
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}
+
+section.portfolio {
+	
+	&>.wr {
+		@extend %flex;
+		justify-content: space-between;
+	
+		&>.col {
+			width: 49%;
+			margin-bottom: 30px;
+			&:first-of-type {
+				img {
+					max-width: 100%;
+				}
+			}
+			&:nth-of-type(1){
+				align-self: center;
+			}
+			h2 {
+				font-family: $Montserrat;
+				font-size: 40px;
+				color: $gray;
+				text-transform: uppercase;	
+
+			}
+			h4 {
+				font-family: $OpenSans;
+				font-size: 16px;
+				color: $gray;
+				margin-bottom: 32px;
+			}
+			.descr {
+				font-family: $OpenSans;
+				font-size: 15px;
+				color: $graylightnew;
+				margin-bottom: 32px;
+			}
+		}
+	}
+}
+
+section.team {
+	&>.wr {
+		 
+		 &>.row1{
+			h2{
+				font-family: $Montserrat;
+				font-size: 32px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: $gray;
+				margin: 0;
+			}
+			h3 {
+				font-family: $OpenSans;
+				font-size: 16px;
+				color: $graylightnew;
+				font-weight: 400;
+			}
+		}
+		&>.row2 {
+			@extend %flex, %ul;
+			margin-top: 30px;
+
+			li {
+				@extend %flex;
+				width: (100% / 3);
+				padding-right: 35px;
+				box-sizing: border-box;
+
+				.col1 {
+					width: 128px;
+					height: 128px;
+					border-radius: 50%;
+					background: no-repeat center / cover;
+					background-image: url("../img/Joey.jpg");
+
+				}
+				.col2 {
+					width: calc(100% - 128px);
+					padding-left: 20px;
+					box-sizing: border-box;
+					h3 {
+						font-family: $Montserrat;
+						color: $gray;
+						font-size: 22px;
+						font-weight: 700;
+						text-transform: uppercase;
+						margin: 0;
+					}
+					h4 {
+						font-family: $OpenSans;
+						font-size: 14px;
+						color: $fairRead;
+						margin:0
+					}
+					.descr {
+						font-family: $OpenSans;
+						font-size: 14px;
+						color: $graylightnew;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	@extend %flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 90px;
+	border-top: 3px solid #e6eaed;
+	margin-top: 80px;
+
+	.col1 {
+		i {
+			display: inline-block;
+			width: 21;
+			height: 21px;
+			margin-right: 21px;
+			color: $footerGray;
+		}
+	}
+	.col2 {
+		font-family: $OpenSans;
+		font-size: 13px;
+		color: $footerGray;
+	}
+}
