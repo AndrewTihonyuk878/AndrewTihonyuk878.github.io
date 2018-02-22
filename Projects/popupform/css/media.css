@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .social_wrap {
+    width: 100%;
+  }
+  .form_wrap{
+    width: 100%;
+  }
+}
